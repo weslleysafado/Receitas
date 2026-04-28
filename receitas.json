@@ -1,0 +1,19 @@
+[
+ {
+"": "100",
+"nome": "Bolo de Caneca",
+"img": "bolo_caneca.jpg",
+"ingredientes": ("Massa": ["1 colher de chá de margarina", "2 colheres de sopa de leite", "2 coheres de sopa de
+"Cobertura":["leite condensado", "granulado"]},
+"utensilios": ["Caneca", "Colher de sopa", "Colher de chá", "Micro-ondas"],"
+videoUrl": "https://github.com/jerog1971/projeto-mobile/blob/main/videos/bolo_caneca.mp4?raw=true",
+"passos":
+("Massa": [
+"Coloque a margarina na caneca e derreta por cerca de 10 a 12 segundos.",
+"Adicione o leite, o açúcar, o trigo e o achocolatado.",
+"Por último adicione o fermento e bata até ficar homogêneo.",
+"Coloque para assar por 70 segundos.",
+"Retire e confira com uma faca a consistência, se necessário, coloque por mais alguns segundos",
+"Observação esta receita cria um bolo de consistência úmida"
+"Cobertura": ["despeje o leite condensado", "polvilhe o granulado"]}
+id": "101",
