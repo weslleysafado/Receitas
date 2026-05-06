@@ -1,7 +1,7 @@
 [
   {
     "id": "5",
-    "name": "Pudim",
+    "nome": "Pudim",
     "img": "pudim.jpg",
     "ingredientes": {
       "Massa": [
@@ -40,7 +40,7 @@
   },
   {
     "id": "6",
-    "name": "Coxinha",
+    "nome": "Coxinha",
     "img": "coxinha.jpg",
     "ingredientes": {
       "Massa": [
