@@ -1,60 +1,49 @@
+import * as React from 'react';
+import { Image, View, Text, Platform } from 'react-native'; 
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-import React from 'react'
-import {StyleSheet, Text, View, FlatList, TouchableOpacity, SafeAreaView} from 'react-native'
-import {NavigationColntainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
-//---
-const DATA = [
-{id: '1', title: 'Configuração'},
-{id: '2', title: 'Perfil'},
-{id: '3', title: 'Mensagem'},
-{id: '4', title: 'Segurança'},
-{id: '5', title: 'Ajuda'}
-];
+import HomeScreen from './screens/HomeScreen';
+import IngredientsScreen from './screens/IngredientsScreen';
+import ToolsScreen from './screens/ToolsScreen';
+import StepsScreen from './screens/StepsScreen';
 
-export default function App () {
-const renderItem = ({item}) => (
-<TouchableOpacity
-style = {style.button}
-onPress = {() => alert (`Você clicou em: ${item.title}`)}>
-<Text style = {style.buttonText}>{item.title}</Text>
-</TouchableOpacity >);
+const Stack = createStackNavigator();
 
-return (
-<SafeAreaView style = {style.container}>
-<Text style = {style.header}> Menu Principal </Text>
-<FlatList
-data = {Data}
-renderItem = {renderItem}
-keyExtractor = {item => item.id}
-contentContainerStyle = {style.listPadding}/>
-</SafeAreaView >
-);
+function LogoTitle() {
+  return (
+    <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+      <Image
+        style={{ width: 30, height: 30, marginRight: 10 }}
+        source={require('./assets/logo.png')} 
+      />
+      <Text style={{ color: '#fff', fontSize: 20, fontWeight: 'bold' }}>
+        Receitas Incríveis
+      </Text>
+    </View>
+  );
 }
 
-const style = StyleSheet.create({
-container: {
-flex: 1,
-backgroundColor: '#f5f5f5'},
-header: {
-fontSize : 24,
-fontWeight:'bold',
-textAlign: 'center',
-margin: 15},
-button: {
-backgroundColor: '#00faff',
-padding: 15,
-borderRadius: 8,
-marginBottom: 10,
-alignItems: 'center',
-elevation: 2,
-shadowColor: '#000',
-shadowOffset:{width: 0, height: 2},
-shadowOpacity: 0.1,
-shadowRadius: 4},
-buttonText:{
-color: '#fff',
-fontSize:16,
-fontWeight:'600'
-},
-});
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator 
+        screenOptions={{ 
+          headerStyle: { backgroundColor: '#326696' }, 
+          headerTintColor: '#fff',
+          // AJUSTE CRUCIAL: Remove a trava de altura no navegador
+          cardStyle: { flex: 1, backgroundColor: '#fff', overflow: Platform.OS === 'web' ? 'visible' : 'hidden' }
+        }}
+      >
+        <Stack.Screen 
+          name="Home" 
+          component={HomeScreen} 
+          options={{ headerTitle: props => <LogoTitle {...props} /> }} 
+        />
+        <Stack.Screen name="Ingredientes" component={IngredientsScreen} />
+        <Stack.Screen name="Utensílios" component={ToolsScreen} />
+        <Stack.Screen name="Passo a Passo" component={StepsScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
