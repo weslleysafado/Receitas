@@ -3,10 +3,10 @@ import { Image, View, Text, Platform } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import HomeScreen from './screens/HomeScreen';
-import IngredientsScreen from './screens/IngredientsScreen';
-import ToolsScreen from './screens/ToolsScreen';
-import StepsScreen from './screens/StepsScreen';
+import HomeScreen from './screens/HomeScreens';
+import IngredientsScreen from './screens/IngredientsScreens';
+import ToolsScreen from './screens/ToolsScreens';
+import StepsScreen from './screens/StepsScreens';
 
 const Stack = createStackNavigator();
 
