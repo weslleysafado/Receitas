@@ -131,7 +131,7 @@ const RECEITAS_INICIAIS = [
  "2. Mexa até engrossar.",
  "3. Despeje sobre o bolo e finalize com granulado."
 ]}, 
-    videoUrl: 'https://raw.githubusercontent.com/weslleysafado/Receitas/main/videos/bolo_de_cenoura.mp4?raw=true' 
+    videoUrl: 'https://raw.githubusercontent.com/weslleysafado/Receitas/main/videos/bolo-de-cenoura.mp4?raw=true' 
   },
   { 
     id: "4", 
