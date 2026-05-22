@@ -44,7 +44,7 @@ const RECEITAS_INICIAIS = [
  "6. Modele bolinhas e coloque na assadeira.",
  "7. Asse em forno médio até dourar."
     ]}, 
-    videoUrl: 'https://raw.githubusercontent.com/weslleysafado/Receitas/main/videos/chocolate.mp4?raw=true'
+    videoUrl: 'https://raw.githubusercontent.com/weslleysafado/Receitas/main/videos/pao_de_queijo.mp4?raw=true'
   },
   { 
     id: "2", 
