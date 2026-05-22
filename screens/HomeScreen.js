@@ -84,7 +84,7 @@ const RECEITAS_INICIAIS = [
  "5. Misture até formar uma massa homogênea.",
  "6. Coloque na forma untada e leve ao forno médio por cerca de 30 minutos."
     ]}, 
-    videoUrl: 'https://raw.githubusercontent.com/weslleysafado/Receitas/main/videos/fuba.mp4?raw=true' 
+    videoUrl: 'https://raw.githubusercontent.com/weslleysafado/Receitas/main/videos/brownie.mp4?raw=true' 
   },
   { 
     id: "3", 
@@ -131,7 +131,7 @@ const RECEITAS_INICIAIS = [
  "2. Mexa até engrossar.",
  "3. Despeje sobre o bolo e finalize com granulado."
 ]}, 
-    videoUrl: 'https://raw.githubusercontent.com/weslleysafado/Receitas/main/videos/cenoura.mp4?raw=true' 
+    videoUrl: 'https://raw.githubusercontent.com/weslleysafado/Receitas/main/videos/bolo_de_cenoura.mp4?raw=true' 
   },
   { 
     id: "4", 
@@ -171,7 +171,7 @@ const RECEITAS_INICIAIS = [
  "5. Coloque sobre a massa já fria.",
  "6. Leve à geladeira até firmar."
  ]}, 
-    videoUrl: 'https://raw.githubusercontent.com/weslleysafado/Receitas/main/videos/laranja.mp4?raw=true' 
+    videoUrl: 'https://raw.githubusercontent.com/weslleysafado/Receitas/main/videos/torta_de_limao.mp4?raw=true' 
   },
 ];
 
